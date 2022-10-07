@@ -29,15 +29,14 @@
                       <li><a href="announcement.html">Announcements</a></li>
                       <li><a href="hostel.html">Hostel</a></li>
                       <li><a href="certificate.html">Certificate Request</a></li>
-                      <div class="dropdown">
-                        <button class="dropbtn">Fees Payment
-                          <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="upi.html">UPI</a>
-                          <a href="pay.html">Credit/Debit</a>
-                        </div>
-                      </div>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fees Payment
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="upi.html">Upi</a></li>
+                          <li><a href="pay.html">Credit/Debit</a></li>
+                        </ul>
+                      </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                       <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
@@ -46,7 +45,7 @@
                 </div>
               </nav>
             </div>
-            <div class="panel-body"  style="background-color: #333; border: none; height: 80%; padding-top: 40px;">
+            <div class="panel-body"  style="background-color: #333; border: none;">
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
