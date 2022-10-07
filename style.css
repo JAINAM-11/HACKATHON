@@ -125,4 +125,17 @@ input[type="checkbox"] {
     color: #387aff;
     text-decoration: none;
 }
-
+.btn-primary{
+    background-color:   #333;
+}
+.date{
+    background-color: #333;
+    color: #fff;
+    height: 40px;
+    border-radius: 8px;
+}
+.date2{
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+}
