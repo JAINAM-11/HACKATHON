@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <title>GPG</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -8,6 +16,8 @@ body {
   font-family: Arial;
   font-size: 17px;
   padding: 8px;
+  background-color: rgb(16, 16, 16);
+  color: white;
 }
 
 * {
@@ -20,11 +30,15 @@ body {
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   margin: 0 -16px;
+  background-color: rgb(16, 16, 16);
+
 }
 
 .col-25 {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
+  background-color: rgb(16, 16, 16);
+
 }
 
 .col-50 {
@@ -45,6 +59,7 @@ body {
 
 .container {
   background-color: #f2f2f2;
+  background-color: rgb(16, 16, 16);
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
@@ -109,12 +124,45 @@ span.price {
 }
 </style>
 </head>
-<body>
-
+<body style="background-color: #333 ;">
+  <div class="panel panel-default" style="background-color: #333; border: none;">
+    <div class="panel-heading"  style="background-color: #333; border: none;">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">GPG</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="home.html">Home</a></li>
+                      <li><a href="announcement.html">Announcements</a></li>
+                      <li><a href="hostel.html">Hostel</a></li>
+                      <li><a href="certificate.html">Certificate Request</a></li>
+                      <li  class="active" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fees Payment
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="upi.html">Upi</a></li>
+                          <li><a href="pay.html">Credit/Debit</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
 <!-- <h2>Responsive Checkout Form</h2> -->
 <!-- <p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p> -->
-<div class="row">
-  <div class="col-75">
+<div class="row" style="background-color: #333 ;">
+  <div class="col-75" style="background-color: #333 ;">
     <div class="container">
       <form action="/action_page.php">
       
@@ -122,9 +170,9 @@ span.price {
           <div class="col-50">
             <h3>Payment To</h3>
             <label for="fname"><i class="fa fa-user"></i> upi id</label>
-            <input type="text" id="payment id" name="payment" value="6453129878@barodpay" readonly>
+            <input type="text"  style="color: black;" id="payment id" name="payment" value="6453129878@barodpay" readonly>
             <label for="email"><i class="fa fa-envelope"></i> back account no</label>
-            <input type="text" id="acc" name="acc" value="XXXXXXXXXX1234">
+            <input type="text"  style="color: black;" id="acc" name="acc" value="XXXXXXXXXX1234" readonly>
            
 
           <div class="col-50">
@@ -137,9 +185,9 @@ span.price {
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div> -->
             <label for="cname">upi id</label>
-            <input type="text" id="id" name="upi id" placeholder="453129878@barodpay">
+            <input type="text"  style="color: black;" id="id" name="upi id" placeholder="Eg : 453129878@barodpay">
             <label for="ccnum">amount</label>
-            <input type="text" id="amount" name="amount" placeholder="100000">
+            <input type="text"  style="color: black;" id="amount" name="amount" placeholder="100000">
             
               
 
